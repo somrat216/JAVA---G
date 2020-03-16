@@ -1,0 +1,137 @@
+package Expl1;
+
+public class Circle extends Shape
+{
+   private double radius;
+
+public Circle(String color, double radius) 
+{
+	super(color);
+	this.radius = radius;
+}
+   
+   public double area ()
+   {
+	   System.out.println("Rectangle Color : " + color);
+	   return 3.1416 * radius * radius ;
+	   
+	   
+   }
+}
+
+
+
+
+
+package Expl1;
+
+public class Rectangle extends Shape
+{
+   private double length;
+   private double width;
+   
+   
+public Rectangle(String color, double length, double width) 
+{
+	super(color);
+	this.length = length;
+	this.width = width;
+}
+   
+   public double area()
+   {
+	   System.out.println("Rectangle Color : " + color);
+	   return length*width;
+   }
+   
+   
+}
+
+
+
+
+
+package Expl1;
+
+public class Triangle extends Shape
+{
+   private double base;
+   private double height;
+
+   
+   public Triangle(String color, double base, double height)
+   {
+	super(color);
+	this.base = base;
+	this.height = height;
+}
+
+ public double area()
+ {
+
+	 System.out.println("Triangle Color : " + color);
+     return 0.5* base * height;
+
+
+ }
+
+ 
+
+}
+
+
+
+
+
+
+
+
+package Expl1;
+
+abstract public class Shape {
+
+  private String color;
+
+public Shape(String color) 
+{
+	super();
+	this.color = color;
+}	
+	
+	
+	abstract public double area ();
+}
+
+
+
+
+package Expl1;
+
+public class Test {
+	
+	public static void main (String[] args) 
+	{  
+    Shape R= new Triangle ("Blue ", 2.5, 8.65);	
+	system.out.println(" Area of Triangle is : " + T.area());
+				
+				
+	Shape R= new Triangle ("Blue ", 1.5, 6.65);
+	System.out.println(" Area of Rectangle is : " + R.area());
+							
+	
+				
+	Shape C= new Triangle ("Black ", 15.5,5.65);
+	System.out.println(" Area of Cricle is : " + C.area());
+							
+			
+				
+	}
+	
+	
+
+}
+
+
+
+
+
