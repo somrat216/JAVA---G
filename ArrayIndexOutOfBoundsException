@@ -1,0 +1,23 @@
+package Example;
+
+public class ArrayIndexOutOfBoundsException 
+{
+
+	public static void main(String[] args) 
+	{
+		try
+		{
+			int a[] = new int [5] ;
+			System.out.println("Value at index 9 is : " +a[9]);
+			
+		}
+		catch (Exception e)
+		{
+			
+			System.out.println(" Array index is out Of bounds exception  ");
+			System.out.println (" Continue the Program " );
+		}
+
+	}
+
+}
