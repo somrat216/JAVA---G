@@ -1,0 +1,49 @@
+package Example;
+
+public class Simple 
+{
+
+	public static void main(String[] args) 
+	{
+	    try
+	    {
+	    	int x = 100;
+		    int y = 0;
+		    int result = x / y;  
+		    System.out.println(" Result is : " + result );
+		    
+		    int [] a = new int [7];
+		    
+		    for ( int b = 0; b<10; b++) 
+		    {
+		    	a[b] = b+1;
+		    }
+		    
+		    for (int value : a)
+		    {
+		    	System.out.println(" Values are : "+ value);
+		    
+		    }
+		    
+	     }
+		    
+		    catch (ArithmeticException e)
+		    {
+		    	System.out.println(" This Is Arithmatic Exception And Can't Divide by zero " + e);
+		        
+		    }
+	   
+	        catch (ArrayIndexOutOfBoundsException e)
+		    {
+		    	System.out.println(" Maximum index 7 and Lopp runs 10 times ");
+		    	
+		    }
+		    catch (Exception e)
+		    {
+		    	System.out.println(" unknown Exceptions ");
+		    	
+		    }
+	    
+	}
+
+}
